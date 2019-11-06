@@ -5862,7 +5862,6 @@ end
 function HealBot_Register_IncHeals()
     if HEALBOT_GAME_VERSION>3 then
         HealBot:RegisterEvent("UNIT_HEAL_PREDICTION")
-    else
         libCHC = libCHC or LibStub("LibClassicHealComm-1.0", true)
         
         if libCHC then
